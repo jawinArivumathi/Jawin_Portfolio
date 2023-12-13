@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Ephesis&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Michroma&family=Silkscreen&display=swap');
+
+
+.whole{
+    display: inline-block;
+    font-family: 'Michroma', sans-serif;    
+    color: white;
+    margin-left: 100px;
+    margin-right: 90px;
+    text-align: left;  
+    font-size: 20px;
+}
+
+.be{
+    margin-top: 40px;
+}
+
+.cse{
+    color:rgb(236, 236, 3);
+    font-family: 'Black Ops One';
+    font-size: 30px;
+}
+
+.licet{
+    color:rgb(236, 236, 3);
+    font-family: 'Black Ops One';
+    font-size: 30px;
+}
+
+.pic1{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+span{
+    color:rgb(236, 236, 3);
+    font-family: 'Black Ops One';
+    font-size: 30px; 
+}
+
+.hsc{
+    margin-top: 40px;
+}

@@ -1,0 +1,81 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Ephesis&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Michroma&family=Silkscreen&display=swap');
+/* font-family: 'Bruno Ace SC', sans-serif;
+font-family: 'Michroma', sans-serif;
+font-family: 'Silkscreen', sans-serif; */
+
+
+.body{
+    font-family: 'Black Ops One';
+    margin: auto;
+}
+
+ul{
+    display: flex;
+    justify-content: right;
+    list-style-type: none; 
+}
+
+.name{
+    color: rgb(253, 253, 253);
+    font-size: 30px;
+    text-align: center;
+    margin-left: 100px;
+}
+
+.name2{
+    color:rgb(236, 236, 3);
+}
+
+li{
+    margin: 13px; 
+   }
+
+li a{
+    color: rgb(240, 240, 240);
+    text-decoration: none;
+    font-family: 'Bruno Ace SC', sans-serif;
+    /* cursor: pointer; */
+
+}
+a::after {
+    background-color:rgb(236, 236, 3);
+}
+
+a:hover{
+    color:rgb(236, 236, 3);
+    text-decoration:underline ;
+}
+
+.front{
+    display: flex;
+}
+
+.image1{
+    margin-left: 100px;
+}
+
+.content{
+    color: white;
+    margin-top: 100px;
+    margin-left: 150px;
+    font-size: 30px; 
+}
+
+.exclamation{
+    color: rgb(236, 236, 3); 
+}
+
+.dev{
+    color: rgb(236, 236, 3);
+    font-size: 40px;
+    font-family: 'Black Ops One';
+}
+
+.a1{
+    font-family: 'Bruno Ace SC', sans-serif;
+}
+
+
