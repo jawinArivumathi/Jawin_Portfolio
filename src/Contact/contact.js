@@ -71,40 +71,48 @@ function Contact(){
       }
       function AutoLayoutExample() {
         return (
-          <Container className="container">
-            <Row className="row">
-              <Col className="col1"><span>Contact</span> :<br/> 8939704091</Col>
-              <Col className="col2"><span>Email</span> :<br/> jawinrozo@gmail.com</Col>
-              <Col className="col3"><span>Address</span> :<br/> D401,<br/>LANCOR Central Park East,<br/>
-                Sholinganallur,<br/>
-                Chennai.<br/>
-                600119.</Col>
-            </Row>
-          </Container>
+            <Container className="contactInfoContainer">
+              <Row className="contactInfoRow">
+                <Col xs={12} md={4} className="col1">
+                  <span>Contact</span> :<br/> 8939704091
+                </Col>
+                <Col xs={12} md={4} className="col2">
+                  <span>Email</span> :<br/> jawinrozo@gmail.com
+                </Col>
+                <Col xs={12} md={4} className="col3">
+                  <span>Address</span> :<br/> 117/A,<br/>WEST MARIYANATHAPURAM,<br/>
+                  kOVIL STREET,<br/>
+                  DINDIGUL.<br/>
+                  624003.
+                </Col>
+              </Row>
+            </Container>
         );
       }
     return(
         <>
-        <div className="whole">
-            <h1>Contact_</h1>
-            <div className="cen">
-            <span>Let's Connect</span>
-            <TextControlsExample />
-            <title pageTitile = 'About Us'></title>
-            </div>   
-            <div className="con">
-            <AutoLayoutExample/>
-            </div>
-            <div className="social">
-                <span>Getting in touch is easy!</span>
-                <div className="logo">
-                    <FontAwesomeIcon className="linkedin" icon={faLinkedin} />
-                    <FontAwesomeIcon className="insta" icon={faInstagram} />
-                    <FontAwesomeIcon className="x" icon={faXTwitter} />
-                    <FontAwesomeIcon className="facebook" icon={faFacebookMessenger} />
-                </div>
-            </div>
-      
+        <div className="contactPage">
+          <div className="whole">
+              <h1>Contact_</h1>
+              <div className="cen">
+              <span>Let's Connect</span>
+              <TextControlsExample />
+              <title pageTitile = 'About Us'></title>
+              </div>   
+              <div className="con">
+              <AutoLayoutExample/>
+              </div>
+              <div className="social">
+                  <span>Getting in touch is easy!</span>
+                  <div className="logo">
+                      <FontAwesomeIcon className="linkedin" icon={faLinkedin} />
+                      <FontAwesomeIcon className="insta" icon={faInstagram} />
+                      <FontAwesomeIcon className="x" icon={faXTwitter} />
+                      <FontAwesomeIcon className="facebook" icon={faFacebookMessenger} />
+                  </div>
+              </div>
+        
+          </div>
         </div>
         </>
     )

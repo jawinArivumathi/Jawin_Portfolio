@@ -12,11 +12,28 @@ font-family: 'Silkscreen', sans-serif; */
     margin: auto;
 }
 
-ul{
+/* ul{
     display: flex;
     justify-content: right;
     list-style-type: none; 
+} */
+
+
+
+.tabStyle{
+    justify-content: right;
 }
+
+.link{
+    /* color: rgb(255, 255, 255); */
+    text-decoration: none;
+}
+
+.tabStyle .nav-link.active {
+    background-color: rgb(242, 223, 12);
+    color: #7b1313; /* Set the font color to white (or any color you prefer) */
+}
+
 
 .name{
     color: rgb(253, 253, 253);
@@ -29,25 +46,24 @@ ul{
     color:rgb(236, 236, 3);
 }
 
-li{
+/* li{
     margin: 13px; 
-   }
-
+   } */
+/* 
 li a{
     color: rgb(240, 240, 240);
     text-decoration: none;
     font-family: 'Bruno Ace SC', sans-serif;
-    /* cursor: pointer; */
+} */
 
-}
-a::after {
+/* a::after {
     background-color:rgb(236, 236, 3);
-}
+} */
 
-a:hover{
+/* a:hover{
     color:rgb(236, 236, 3);
     text-decoration:underline ;
-}
+} */
 
 .front{
     display: flex;
@@ -76,6 +92,101 @@ a:hover{
 
 .a1{
     font-family: 'Bruno Ace SC', sans-serif;
+}
+
+/* Responsive overrides (scoped to the Home page wrapper) */
+.homePage .body{
+    font-family: 'Black Ops One';
+    margin: auto;
+    padding: clamp(12px, 2.5vw, 40px);
+}
+
+.homePage .tabStyle{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.homePage .tabStyle .nav-link{
+    white-space: nowrap;
+    font-size: clamp(12px, 2.2vw, 16px);
+}
+
+.homePage .link{
+    text-decoration: none;
+}
+
+.homePage #home1{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.homePage .name{
+    margin-left: 0;
+    margin: 0;
+    padding: clamp(10px, 2vw, 20px) 0;
+    font-size: clamp(26px, 5vw, 38px);
+}
+
+.homePage .image1{
+    margin-left: 0;
+    width: min(100%, 420px);
+    height: auto;
+    flex: 1 1 280px;
+}
+
+.homePage .front{
+    flex-wrap: wrap;
+    gap: clamp(16px, 4vw, 64px);
+    padding: clamp(10px, 3vw, 28px) 0;
+    justify-content: center;
+}
+
+.homePage .content{
+    margin-left: 0;
+    margin-top: 0;
+    font-size: clamp(18px, 2.6vw, 30px);
+    max-width: 560px;
+    flex: 1 1 280px;
+    padding: 0;
+}
+
+.homePage .dev{
+    font-size: clamp(28px, 5vw, 44px);
+}
+
+@media (max-width: 767.98px) {
+    .homePage .tabStyle{
+        flex-wrap: wrap;
+    }
+    .homePage .content{
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .homePage .front{
+        flex-wrap: nowrap;
+    }
+    .homePage .content{
+        text-align: left;
+    }
+    .homePage .image1{
+        flex: 0 0 420px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .homePage .front{
+        gap: clamp(32px, 5vw, 90px);
+    }
+    .homePage .body{
+        padding: clamp(12px, 2vw, 60px);
+    }
 }
 
 

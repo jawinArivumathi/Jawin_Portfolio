@@ -12,6 +12,7 @@ import Skills from './Skills/skills';
 import './Skills/skills.css';
 import Contact from './Contact/contact'
 import './Contact/contact.css'
+import './global.css';
 
 
 

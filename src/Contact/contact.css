@@ -62,3 +62,95 @@
     padding-left: 20px;   
 }
 
+/* Responsive overrides (scoped to Contact page) */
+.contactPage .whole{
+    font-family: 'Michroma', sans-serif;
+    color: white;
+    display: block;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 clamp(16px, 3vw, 40px);
+}
+
+.contactPage h1{
+    color: white;
+    font-size: clamp(28px, 5vw, 38px);
+    margin-bottom: clamp(20px, 4vw, 50px);
+}
+
+.contactPage .cen{
+    padding-left: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.contactPage .form{
+    width: min(400px, 100%);
+}
+
+.contactPage .con{
+    margin-top: clamp(24px, 4vw, 50px);
+    width: 100%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* React-Bootstrap Container renders `.container` */
+.contactPage .container{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.contactPage .col1,
+.contactPage .col2,
+.contactPage .col3{
+    text-align: left;
+    font-size: 17px;
+    margin-bottom: 12px;
+}
+
+.contactPage .col3{
+    font-size: 16px;
+}
+
+.contactPage .social{
+    text-align: center;
+    margin-top: clamp(24px, 4vw, 50px);
+}
+
+.contactPage .social span{
+    color: rgb(236, 236, 3);
+    font-family: 'Black Ops One';
+    font-size: clamp(18px, 2.8vw, 26px);
+}
+
+.contactPage span{
+    color: rgb(236, 236, 3);
+    font-family: 'Black Ops One';
+    font-size: clamp(18px, 2.8vw, 26px);
+}
+
+.contactPage .logo{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: clamp(12px, 3vw, 20px);
+}
+
+.contactPage .linkedin,
+.contactPage .insta,
+.contactPage .x,
+.contactPage .facebook{
+    font-size: clamp(28px, 7vw, 50px);
+    padding-left: 0;
+}
+
+.contactPage .linkedin{
+    padding-left: 0;
+}
+

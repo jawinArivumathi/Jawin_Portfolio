@@ -1,44 +1,66 @@
 import bnp from './bnp.png'
 import tmg from './takenmind.png'
-
-
+import syncfusionLogo from './syncfusion-logo.png'
 
 function Experience(){
     return(
         <>
-        <div className="whole">
-            <h1>Experience_</h1>
-            <div>
-            <span>DATA ENGINEERING</span>&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;BNP PARIBAS
-            <br/>
-             <span>JAN</span>, 2023 – <span>MAY</span>, 2023
-            </div>
-            <img src={bnp} height={'400px'} width={'450px'} alt='bnps'/>
-            <div>
-            	Served as a Data Engineer internship in data warehouse system called BOGART.
-                Multiple upstream data were handled and fed to downstream systems.
-                <div className='space'>
-                Data manipulation were carried out using SQL and orchestrated accordingly.
-                Multiple redundant task automation was performed using shell script.
+        <div className="experiencePage">
+            <div className="whole">
+                <h1>Experience_</h1>
+
+                <div className="experienceBlock">
+                    <div className="experienceHeader">
+                        <img className="companyLogo" src={syncfusionLogo} alt="Syncfusion logo" />
+                        <div className="experienceMeta">
+                            <span>Software Engineer</span> | Syncfusion Software
+                            <br/>
+                            <span>JAN</span>, 2024 - Present
+                        </div>
+                    </div>
+                    <ul className="experienceList">
+                        <li>Built backend logic and automation for Essential Studio Web Diagram using Python.</li>
+                        <li>Developed web apps with Python, C#, HTML, CSS, and JavaScript.</li>
+                        <li>Used Git workflows for smooth integration and code reviews.</li>
+                        <li>Debugged issues and optimized backend performance for better reliability.</li>
+                        <li>Automated testing with Playwright and BUnit to improve quality.</li>
+                    </ul>
+                </div>
+
+                <div className="experienceBlock">
+                    <div className="experienceHeader">
+                        <img className="companyLogo" src={bnp} alt='BNP Paribas logo'/>
+                        <div className="experienceMeta">
+                            <span>Data Engineering Intern</span> | BNP Paribas
+                            <br/>
+                            <span>JAN</span>, 2023 - <span>MAY</span>, 2023
+                        </div>
+                    </div>
+                    <ul className="experienceList">
+                        <li>Worked on BOGART data warehouse workflows during internship.</li>
+                        <li>Handled upstream data integration and downstream data flow support.</li>
+                        <li>Performed SQL data manipulation and orchestration tasks.</li>
+                        <li>Automated repetitive tasks using shell scripting.</li>
+                    </ul>
+                </div>
+
+                <div className="experienceBlock">
+                    <div className="experienceHeader">
+                        <img className="companyLogo" src={tmg} alt='Takenmind Global logo'/>
+                        <div className="experienceMeta">
+                            <span>Data Analytics Intern</span> | Takenmind Global
+                            <br/>
+                            <span>JULY</span>, 2021
+                        </div>
+                    </div>
+                    <ul className="experienceList">
+                        <li>Collected data from databases, spreadsheets, and other sources.</li>
+                        <li>Validated data for accuracy, completeness, and reliability.</li>
+                        <li>Collaborated on setup and support of data pipelines.</li>
+                        <li>Handled missing data with appropriate imputation methods.</li>
+                    </ul>
                 </div>
             </div>
-            <div className='part2'>
-            <div className='content2'>
-            <span>DATA ANALYTICS INTERNSHIP&nbsp;</span> |&nbsp;
-             TAKENMIND GLOBAL <br/>
-            <span>JULY 1</span>, 2021 – <span>JULY 28</span>,2021
-            </div>
-            <img className='tmg' src={tmg} height={'300px'} width={'300px'} alt='tmg'/>
-            <div className='content2'>
-             Gather data from various sources, such as databases, spreadsheets,and more.<br/>
-             Ensure data accuracy, completeness, and reliability.
-             <div className='space'>
-             Collaborate with data engineers or other teams to set up data pipelines.<br/>
-             Handle missing data through imputation or other suitable methods.
-             </div>
-            </div>
-            </div>
-            
         </div>
         </>
     )
