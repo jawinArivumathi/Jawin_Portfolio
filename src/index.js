@@ -2,16 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Home from './Home/Home';
 import './Home/Home.css';
-import About from './About/about';
-import './About/about.css';
-import Education from './Education/education';
-import './Education/education.css';
-import Experience from './Experience/experience';
-import './Experience/experience.css';
-import Skills from './Skills/skills';
-import './Skills/skills.css';
-import Contact from './Contact/contact'
-import './Contact/contact.css'
+// Note: About/Education/Experience/Skills/Contact are currently not rendered.
+// Keeping them imported would trigger ESLint `no-unused-vars` errors in CI (Vercel).
 import './global.css';
 
 
